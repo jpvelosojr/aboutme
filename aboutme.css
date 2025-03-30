@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3F85DC;
+    margin: 0;
+    padding: 0;
+}
+.card {
+    background-color: #ffffff;
+    max-width: 24rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    margin-top: 4rem;
+    border-top: 0.5rem solid #1d4ed8;
+    padding-top: 4rem;
+}
+.profile-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.25rem solid #ffffff;
+}
+.profile-image img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.name {
+     margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    text-align: center;
+}
+.title {
+    font-size: 0.875rem;
+    color: #4b5563;
+    text-align: center;
+	font-weight: 600;
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    background-color: #1d4ed8;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 0.9rem;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #1e40af; 
+}
+.about {
+    margin-top: 1.5rem;
+    color: #374151;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.education-title {
+    margin-top: 1.5rem;
+    color: #6b7280; 
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+education-text {
+    color: #374151;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.social-links a {
+    transition: color 0.2s ease;
+}
+.social-links a:hover {
+	color: #1f2937;
+}
+.icon {
+    width: 1.5rem;
+    height: 2.1rem;
+}
+@media (max-width: 640px){
+.card {
+    max-width: 90%;
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+}
+.profile-image {
+	width: 5rem;
+	height: 5rem;
+}
+.name {
+	font-size: 1rem;
+    }
+.title {
+	font-size: 0.75rem;
+}
+.about {
+	font-size: 0.75rem;
+}
+.education-title {
+	font-size: 0.7rem;
+}
+.education-text {
+    font-size: 0.75rem;
+}
+.social-links {
+    gap: 0.75rem;
+}
+.icon {
+	width: 1.25rem;
+    height: 1.25rem;
+}
+}
